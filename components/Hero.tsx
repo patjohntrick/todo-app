@@ -1,10 +1,10 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, FormEventHandler, SetStateAction } from "react";
 import { IoIosAddCircle } from "react-icons/io";
 
 type Props = {
   todo: string;
   setTodo: Dispatch<SetStateAction<string>>;
-  addTodo?: () => void;
+  addTodo?: FormEventHandler<HTMLFormElement>;
 };
 
 const Hero = ({ todo, setTodo, addTodo }: Props) => {
